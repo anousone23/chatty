@@ -6,7 +6,7 @@ import { axiosIntance } from "../libs/axios";
 import { IAuthStore } from "../types";
 
 const BASE_URL =
-  import.meta.env.MODE === "development" ? "http://localhost:8000" : "/api";
+  import.meta.env.MODE === "development" ? "http://localhost:8000" : "/";
 
 export const useAuthStore = create<IAuthStore>((set, get) => ({
   onlineUsers: [],
